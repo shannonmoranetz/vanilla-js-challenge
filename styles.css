@@ -8,12 +8,22 @@ label {
   font-size: 20px;
 }
 
-input {
-  font-size: 17px;
-}
-
 .header {
   text-align: center;
+}
+
+.master-flex {
+  display: flex;
+  vertical-align: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
 }
 
 .title {
@@ -28,10 +38,12 @@ input {
 }
 
 .range-container {
-  margin: 20px auto;
+  margin: 20px 40px;
   border: 2px solid black;
-  width: 40%;
-  padding: 10px 30px;
+}
+
+.range-flex {
+  text-align: center;
 }
 
 .range-notice {
@@ -40,23 +52,14 @@ input {
   margin: 10px 0px;
 }
 
-.range-flex,
-.p1-flex,
-.p2-flex {
-  display: flex;
-  justify-content: space-around;
-}
-
 .guess-container {
   margin: 20px auto;
   border: 2px solid black;
-  width: 40%;
   padding: 10px 30px;
 }
 
-.button-container {
-  margin: 0 auto;
-  width: 50%;
+.button-container { 
+  text-align: center;
 }
 
 .score-container {
@@ -66,21 +69,18 @@ input {
   padding: 10px 30px;
 }
 
-.score-flex {
-  display: flex;
-  justify-content: space-around;
-}
-
 .p1-score-container,
 .p2-score-container {
   border: 1px solid black;
   padding: 20px 20px;
+  width: 200px;
 }
 
 .range-title,
 .challenger-title,
 .score-title {
   margin: 0px;
+  text-align: center;
   font-size: 26px;
   padding: 10px 0px;
 }
