@@ -1,6 +1,6 @@
 var answer = 50;
-var minRange;
-var maxRange;
+var minRange = 1;
+var maxRange = 100;
 
 document.querySelector('.guess-submit').addEventListener('click', function() {
   getNameGuess();
@@ -10,9 +10,20 @@ document.querySelector('.range-submit').addEventListener('click', function() {
   getRange();
 });
 
+document.querySelector('.reset').addEventListener('click', function() {
+  resetGame();
+})
+
+function resetGame() {
+  minRange = 1;
+  maxRange = 100;
+  document.querySelector('.winner').innerHTML = '';
+}
+
 function getRange() {
-  minRange = document.querySelector('.min-range-input').value;
-  maxRange = document.querySelector('.max-range-input').value;
+  minRange = parseInt(document.querySelector('.min-range-input').value);
+  maxRange = parseInt(document.querySelector('.max-range-input').value);
+  document.querySelector('.range-notice').innerHTML = `the current range is ${minRange} to ${maxRange}`;
 }
 
 function getNameGuess() {
