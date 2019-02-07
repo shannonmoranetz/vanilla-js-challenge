@@ -14,10 +14,24 @@ document.querySelector('.reset').addEventListener('click', function() {
   resetGame();
 })
 
+document.querySelector('.clear').addEventListener('click', function() {
+  clear();
+})
+
+
 function resetGame() {
   minRange = 1;
   maxRange = 100;
   document.querySelector('.winner').innerHTML = '';
+}
+
+function clear() {
+  document.querySelector('.min-range-input').value = '';
+  document.querySelector('.max-range-input').value = '';
+  document.querySelector('.p1-name-input').value = '';
+  document.querySelector('.p2-name-input').value = '';
+  document.querySelector('.p1-guess-input').value = '';
+  document.querySelector('.p2-guess-input').value = '';
 }
 
 function getRange() {
