@@ -1,10 +1,19 @@
-var minRange = 0;
-var maxRange = 100;
 var answer = 50;
+var minRange;
+var maxRange;
 
 document.querySelector('.guess-submit').addEventListener('click', function() {
   getNameGuess();
 });
+
+document.querySelector('.range-submit').addEventListener('click', function() {
+  getRange();
+});
+
+function getRange() {
+  minRange = document.querySelector('.min-range-input').value;
+  maxRange = document.querySelector('.max-range-input').value;
+}
 
 function getNameGuess() {
   var playerOneGuess = document.querySelector('.p1-guess-input').value;
@@ -17,7 +26,10 @@ function getNameGuess() {
 
 function checkPlayerOneGuess(playerOneGuess, playerOneName) {
   var playerOneResult;
-  if (playerOneGuess < answer) {
+  if (playerOneGuess < minRange || playerOneGuess > maxRange) {
+    console.log(playerOneGuess, minRange);
+    playerOneResult = 'outside of range';
+  } else if (playerOneGuess < answer) {
     playerOneResult = 'thats too low';
   } else if (playerOneGuess > answer) {
     playerOneResult = 'thats too high';
@@ -30,7 +42,9 @@ function checkPlayerOneGuess(playerOneGuess, playerOneName) {
 
 function checkPlayerTwoGuess(playerTwoGuess, playerTwoName) {
   var playerTwoResult;
-  if (playerTwoGuess < answer) {
+  if (playerTwoGuess < minRange || playerTwoGuess > maxRange) {
+    playerTwoResult = 'outside of range';
+  } else if (playerTwoGuess < answer) {
     playerTwoResult = 'thats too low';
   } else if (playerTwoGuess > answer) {
     playerTwoResult = 'thats too high';
