@@ -8,6 +8,10 @@ label {
   font-size: 20px;
 }
 
+input {
+  font-size: 17px;
+}
+
 .header {
   text-align: center;
 }
@@ -31,14 +35,16 @@ label {
 }
 
 .range-notice {
-  font-size: 20px;
+  font-size: 25px;
+  text-align: center;
+  margin: 10px 0px;
 }
 
 .range-flex,
 .p1-flex,
 .p2-flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .guess-container {
