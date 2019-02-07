@@ -23,8 +23,9 @@ function checkPlayerOneGuess(playerOneGuess, playerOneName) {
     playerOneResult = 'thats too high';
   } else {
     playerOneResult = 'correct';
+    endGame(playerOneName);
   }
-  updatePlayerOneScoreDom(playerOneResult);
+  updatePlayerOneScoreDom(playerOneResult, playerOneName, playerOneGuess);
 }
 
 function checkPlayerTwoGuess(playerTwoGuess, playerTwoName) {
@@ -35,14 +36,23 @@ function checkPlayerTwoGuess(playerTwoGuess, playerTwoName) {
     playerTwoResult = 'thats too high';
   } else {
     playerTwoResult = 'correct';
+    endGame(playerTwoName);
   }
-  updatePlayerTwoScoreDom(playerTwoResult);
+  updatePlayerTwoScoreDom(playerTwoResult, playerTwoName, playerTwoGuess);
 }
 
-function updatePlayerOneScoreDom(result) {
-  document.querySelector('.p1-current-guess').innerHTML = result;
+function updatePlayerOneScoreDom(result, name, guess) {
+  document.querySelector('.p1-score-name').innerHTML = name;
+  document.querySelector('.p1-current-guess').innerHTML = guess;
+  document.querySelector('.p1-hot-cold').innerHTML = result;
 }
 
-function updatePlayerTwoScoreDom(result) {
-  document.querySelector('.p2-current-guess').innerHTML = result;
+function updatePlayerTwoScoreDom(result, name, guess) {
+  document.querySelector('.p2-score-name').innerHTML = name;
+  document.querySelector('.p2-current-guess').innerHTML = guess;
+  document.querySelector('.p2-hot-cold').innerHTML = result;
+}
+
+function endGame(name) {
+  document.querySelector('.winner').innerHTML = `${name} is the winner`;
 }
