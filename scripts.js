@@ -12,17 +12,17 @@ document.querySelector('.range-submit').addEventListener('click', function() {
 
 document.querySelector('.reset').addEventListener('click', function() {
   resetGame();
-})
+});
 
 document.querySelector('.clear').addEventListener('click', function() {
   clear();
-})
-
+});
 
 function resetGame() {
   minRange = 1;
   maxRange = 100;
   document.querySelector('.winner').innerHTML = '';
+  clear();
 }
 
 function clear() {
