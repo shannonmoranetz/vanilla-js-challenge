@@ -3,6 +3,7 @@
   <head>
     <title>Bumber Guessum</title>
   </head>
+  <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles.css">
   <body>
     <header class="header">
@@ -12,41 +13,50 @@
     <section class="game">
       <div class="range-container">
         <h3 class="range-title">set range</h3>
-        <label for="min-range">min range</label>
-        <input type="text" class="min-range-input" name="min-range"/>
-        <label for="max-range">max range</label>
-        <input type="text" class="max-range-input" name="max-range"/>
-        <button class="range-submit">update</button>
+        <div class="range-flex">
+          <label for="min-range">min range</label>
+          <input type="text" class="min-range-input" name="min-range"/>
+          <label for="max-range">max range</label>
+          <input type="text" class="max-range-input" name="max-range"/>
+          <button class="range-submit">update</button>
+        </div>
         <p class="range-notice">the current range is 1 to 100</p>
       </div>
       <div class="guess-container">
         <h3 class="challenger-title">challenger 1</h3>
-        <label for="p1-name">name</label>
-        <input type="text" class="p1-name-input" name="p1-name"/>
-        <label for="p1-guess">guess</label>
-        <input type="text" class="p1-guess-input" name="p1-guess"/>
+        <div class="p1-flex">
+          <label for="p1-name">name</label>
+          <input type="text" class="p1-name-input" name="p1-name"/>
+          <label for="p1-guess">guess</label>
+          <input type="text" class="p1-guess-input" name="p1-guess"/>
+        </div>
         <h3 class="challenger-title">challenger 2</h3>
-        <label for="p2-name">name</label>
-        <input type="text" class="p2-name-input" name="p2-name"/>
-        <label for="p2-guess">guess</label>
-        <input type="text" class="p2-guess-input" name="p2-guess"/>
+        <div class="p2-flex">
+          <label for="p2-name">name</label>
+          <input type="text" class="p2-name-input" name="p2-name"/>
+          <label for="p2-guess">guess</label>
+          <input type="text" class="p2-guess-input" name="p2-guess"/>
+        </div>
+        <br />
         <button class="guess-submit"/>submit guess</button>
         <button class="reset">reset</button>
         <button class="clear">clear</button>
       </div>
       <div class="score-container">
-        <h3 class="score-title">latest score</h3>
-        <div class="p1-score-container">
-          <p class="p1-score-name">challenger 1</p>
-          <p class="p1-current-guess">current guess</p>
-          <p class="p1-guess-num"></p>
-          <p class="p1-hot-cold"></p>
-        </div>
-        <div class="p2-score-container">
-            <p class="p2-score-name">challenger 2</p>
-            <p class="p2-current-guess">current guess</p>
-            <p class="p2-guess-num"></p>
-            <p class="p2-hot-cold"></p>
+        <h3 class="score-title">score:</h3>
+        <div class="score-flex">
+          <div class="p1-score-container">
+            <p class="p1-score-name">challenger 1</p>
+            <p class="p1-current-guess">current guess</p>
+            <p class="p1-guess-num"></p>
+            <p class="p1-hot-cold"></p>
+          </div>
+          <div class="p2-score-container">
+              <p class="p2-score-name">challenger 2</p>
+              <p class="p2-current-guess">current guess</p>
+              <p class="p2-guess-num"></p>
+              <p class="p2-hot-cold"></p>
+          </div>
         </div>
       </div>
       <h4 class="winner"></h4>
