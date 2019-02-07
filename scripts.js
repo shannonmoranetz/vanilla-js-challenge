@@ -24,7 +24,7 @@ document.querySelector('.clear').addEventListener('click', function() {
 
 function randomAnswer() {
   answer = Math.floor(Math.random() * (maxRange - minRange + 1)) + minRange;
-  console.log(answer);
+  console.log('Answer: ', answer);
 }
 
 function resetGame() {
@@ -32,6 +32,7 @@ function resetGame() {
   maxRange = 100;
   document.querySelector('.winner').innerHTML = '';
   clear();
+  randomAnswer();
 }
 
 function clear() {
@@ -62,7 +63,6 @@ function getNameGuess() {
 function checkPlayerOneGuess(playerOneGuess, playerOneName) {
   var playerOneResult;
   if (playerOneGuess < minRange || playerOneGuess > maxRange) {
-    console.log(playerOneGuess, minRange);
     playerOneResult = 'outside of range';
   } else if (playerOneGuess < answer) {
     playerOneResult = 'thats too low';
