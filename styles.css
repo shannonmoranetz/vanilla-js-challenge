@@ -48,6 +48,11 @@ label {
   padding: 10px 30px;
 }
 
+.button-container {
+  margin: 0 auto;
+  width: 50%;
+}
+
 .score-container {
   margin: 20px auto;
   border: 2px solid black;
