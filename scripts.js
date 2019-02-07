@@ -1,6 +1,10 @@
-var answer = 50;
+var answer;
 var minRange = 1;
 var maxRange = 100;
+
+window.onload = function() {
+  randomAnswer();
+}
 
 document.querySelector('.guess-submit').addEventListener('click', function() {
   getNameGuess();
@@ -17,6 +21,11 @@ document.querySelector('.reset').addEventListener('click', function() {
 document.querySelector('.clear').addEventListener('click', function() {
   clear();
 });
+
+function randomAnswer() {
+  answer = Math.floor(Math.random() * (maxRange - minRange + 1)) + minRange;
+  console.log(answer);
+}
 
 function resetGame() {
   minRange = 1;
@@ -38,6 +47,7 @@ function getRange() {
   minRange = parseInt(document.querySelector('.min-range-input').value);
   maxRange = parseInt(document.querySelector('.max-range-input').value);
   document.querySelector('.range-notice').innerHTML = `the current range is ${minRange} to ${maxRange}`;
+  randomAnswer();
 }
 
 function getNameGuess() {
