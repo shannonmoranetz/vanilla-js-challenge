@@ -3,4 +3,56 @@
   <head>
     <title>Bumber Guessum</title>
   </head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <body>
+    <header class="header">
+      <h1 class="title">bumber guessum</h1>
+      <h2 class="subtitle">ultimate bumba edition</h2>
+    </header>
+    <section class="game">
+      <div class="range-container">
+        <h3 class="range-title">set range</h3>
+        <form>
+          <label for="min-range">min range</label>
+          <input type="text" name="min-range"/>
+          <label for="max-range">max range</label>
+          <input type="text" name="max-range"/>
+          <input type="submit" value="update"/>
+        </form>
+      </div>
+      <div class="guess-container">
+        <form class="game-inputs">
+          <h3 class="challenger-title">challenger 1</h3>
+          <label for="p1-name">name</label>
+          <input type="text" name="p1-name"/>
+          <label for="p1-guess">guess</label>
+          <input type="text" name="p1-guess"/>
+          <h3 class="challenger-title">challenger 2</h3>
+          <label for="p2-name">name</label>
+          <input type="text" name="p2-name"/>
+          <label for="p2-guess">guess</label>
+          <input type="text" name="p2-guess"/>
+          <input type="submit" value="guess"/>
+        </form>
+        <button class="reset">reset</button>
+        <button class="clear">clear</button>
+      </div>
+      <div class="score-container">
+        <h3 class="score-title">latest score</h3>
+        <div class="p1-score-container">
+          <p class="p1-score-name">challenger 1</p>
+          <p class="current-guess">current guess</p>
+          <p class="p1-guess-num">0</p>
+          <p class="p1-hot-cold">thats too low</p>
+        </div>
+        <div class="p2-score-container">
+            <p class="p2-score-name">challenger 2</p>
+            <p class="current-guess">current guess</p>
+            <p class="p2-guess-num">0</p>
+            <p class="p2-hot-cold">thats too low</p>
+        </div>
+      </div>
+    </section>
+    <script src="scripts.js"></script>
+  </body>
 </html>
