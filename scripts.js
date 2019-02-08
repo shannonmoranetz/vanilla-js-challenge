@@ -47,7 +47,7 @@ function clear() {
 function getRange() {
   minRange = parseInt(document.querySelector('.min-range-input').value);
   maxRange = parseInt(document.querySelector('.max-range-input').value);
-  document.querySelector('.range-notice').innerHTML = `the current range is ${minRange} to ${maxRange}`;
+  document.querySelector('.range-notice').innerHTML = `da current range look like ${minRange} to ${maxRange}`;
   randomAnswer();
 }
 
