@@ -2,6 +2,7 @@ body {
   font-family: Patrick Hand;
   margin: 0;
   padding: 0;
+  background-image: url('app-bg.jpg')
 }
 
 h1, h2, h3, h4, p {
@@ -17,13 +18,13 @@ button {
   font-size: 20px;
   padding: 5px 10px;
   margin: 10px 6px;
-  border: 1px solid black;
+  border: 1px solid #689798;
   border-radius: 10px;
 }
 
 input {
   font-size: 14px;
-  border: 1px solid black;
+  border: 1px solid #689798;
   border-radius: 8px;
   text-align: center;
 }
@@ -77,9 +78,10 @@ input {
 
 .range-container {
   margin: 20px 40px;
-  border: 2px solid black;
+  border: 4px solid #689798;
   width: 400px;
   text-align: center;
+  background-image: linear-gradient(-180deg, white, #E0F6F5);
 }
 
 .range-flex {
@@ -96,9 +98,10 @@ input {
 
 .guess-container {
   margin: 20px auto;
-  border: 2px solid black;
+  border: 4px solid #689798;
   padding: 10px 30px;
   width: 380px;
+  background-image: linear-gradient(-90deg, white, #E0F6F5);
 }
 
 .button-container { 
@@ -107,14 +110,13 @@ input {
 
 .score-container {
   margin: 20px auto;
-  border: 2px solid black;
   width: 40%;
   padding: 10px 30px;
 }
 
 .p1-score-container,
 .p2-score-container {
-  border: 1px solid black;
+  border: 4px solid #689798;
   padding: 20px 20px;
   width: 200px;
   height: 250px;
@@ -122,23 +124,25 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  background-image: linear-gradient(white, #E0F6F5);
 }
 
 .p1-score-name,
 .p2-score-name {
   font-size: 50px;
+  color: #689798;
 }
 
 .p1-current-guess,
 .p2-current-guess {
   font-size: 20px;
-
 }
 
 .p1-guess-num,
 .p2-guess-num {
   font-size: 70px;
   font-weight: bold;
+  color: #16BA6D;
 }
 
 .p1-hot-cold,
@@ -147,19 +151,39 @@ input {
 
 }
 
-
-
-
+.hippo-flex {
+  display: flex;
+  flex-direction: column;
+}
 
 .range-title,
 .challenger-title,
 .score-title {
   text-align: center;
   font-size: 32px;
+  color: #689798;
 }
 
 .winner {
   text-align: center;
   font-size: 50px;
   margin: 0px;
+}
+
+.img-1 {
+  height: 200px;
+  width: 270px;
+  margin-bottom: 20px;
+}
+
+.img-2 {
+  height: 200px;
+  width: 273px;
+  margin-bottom: 20px;
+}
+
+.img-1,
+.img-2 {
+  border: 4px solid #689798;
+  border-radius: 5px;
 }
