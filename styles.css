@@ -2,7 +2,7 @@ body {
   font-family: Patrick Hand;
   margin: 0;
   padding: 0;
-  background-image: url('app-bg.jpg')
+  background-image: url('app-bg.jpg');
 }
 
 h1, h2, h3, h4, p {
@@ -18,21 +18,42 @@ button {
   font-size: 20px;
   padding: 5px 10px;
   margin: 10px 6px;
-  border: 1px solid #689798;
+  border: 3px solid #689798;
   border-radius: 10px;
 }
 
 input {
   font-size: 14px;
-  border: 1px solid #689798;
+  border: 3px solid rgb(126, 151, 221);
   border-radius: 8px;
   text-align: center;
 }
 
+.gif {
+  height: 120px;
+  width: 120px;
+  margin-top: 20px;
+}
+
+.mirror {
+  transform: scaleX(-1);
+}
+
 .header {
   text-align: center;
-  background-image: linear-gradient(-90deg,#E0F6F5 10%, #F9E758);
+  background-image: linear-gradient(-90deg,#E0F6F5 50%, rgb(126, 151, 221));
   border-bottom: 3px solid #689798;
+}
+
+.head-flex {
+  display: flex;
+  vertical-align: middle;
+  justify-content: space-around;
+}
+
+.head-col {
+  display: flex;
+  flex-direction: column;
 }
 
 .master-flex {
@@ -173,7 +194,7 @@ input {
 .winner {
   text-align: center;
   font-size: 50px;
-  margin: 0px;
+  margin: 0px auto;
 }
 
 .img-1 {
@@ -192,4 +213,10 @@ input {
 .img-2 {
   border: 4px solid #689798;
   border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(126, 151, 221);
+  color: white;
 }

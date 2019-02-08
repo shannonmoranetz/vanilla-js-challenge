@@ -103,5 +103,5 @@ function updatePlayerTwoScoreDom(result, name, guess) {
 }
 
 function endGame(name) {
-  document.querySelector('.winner').innerHTML = `${name} is the winner`;
+  document.querySelector('.winner').innerHTML = `${name} da winby`;
 }
