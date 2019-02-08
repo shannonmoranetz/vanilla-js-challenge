@@ -4,8 +4,28 @@ body {
   padding: 0;
 }
 
+h1, h2, h3, h4, p {
+  margin: 2px 0px;
+}
+
 label {
   font-size: 20px;
+  padding-bottom: 3px;
+}
+
+button {
+  font-size: 20px;
+  padding: 5px 10px;
+  margin: 10px 6px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+input {
+  font-size: 14px;
+  border: 1px solid black;
+  border-radius: 8px;
+  text-align: center;
 }
 
 .header {
@@ -16,33 +36,55 @@ label {
   display: flex;
   vertical-align: center;
   align-items: center;
-  width: 80%;
+  width: 72%;
   margin: 0 auto;
   justify-content: space-between;
+}
+
+.p1-flex,
+.p2-flex {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.p1-name-flex,
+.p1-guess-flex,
+.p2-name-flex,
+.p2-guess-flex,
+.min-range-flex,
+.max-range-flex {
+  display: flex;
+  flex-direction: column;
 }
 
 .game {
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
 }
 
 .title {
-  font-size: 50px;
+  font-size: 65px;
   font-weight: bold;
   margin: 0px;
 }
 
 .subtitle {
-  font-size: 30px;
+  font-size: 40px;
   margin: 0px;
 }
 
 .range-container {
   margin: 20px 40px;
   border: 2px solid black;
+  width: 400px;
+  text-align: center;
 }
 
 .range-flex {
+  display: flex;
+  justify-content: space-around;
   text-align: center;
 }
 
@@ -56,6 +98,7 @@ label {
   margin: 20px auto;
   border: 2px solid black;
   padding: 10px 30px;
+  width: 380px;
 }
 
 .button-container { 
@@ -74,19 +117,49 @@ label {
   border: 1px solid black;
   padding: 20px 20px;
   width: 200px;
+  height: 250px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
+
+.p1-score-name,
+.p2-score-name {
+  font-size: 50px;
+}
+
+.p1-current-guess,
+.p2-current-guess {
+  font-size: 20px;
+
+}
+
+.p1-guess-num,
+.p2-guess-num {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.p1-hot-cold,
+.p2-hot-cold {
+  font-size: 30px;
+
+}
+
+
+
+
 
 .range-title,
 .challenger-title,
 .score-title {
-  margin: 0px;
   text-align: center;
-  font-size: 26px;
-  padding: 10px 0px;
+  font-size: 32px;
 }
 
 .winner {
   text-align: center;
-  font-size: 20px;
-  margin: 5px 0px;
+  font-size: 50px;
+  margin: 0px;
 }

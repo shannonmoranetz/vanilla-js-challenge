@@ -92,13 +92,13 @@ function checkPlayerTwoGuess(playerTwoGuess, playerTwoName) {
 
 function updatePlayerOneScoreDom(result, name, guess) {
   document.querySelector('.p1-score-name').innerHTML = name;
-  document.querySelector('.p1-current-guess').innerHTML = guess;
+  document.querySelector('.p1-guess-num').innerHTML = guess;
   document.querySelector('.p1-hot-cold').innerHTML = result;
 }
 
 function updatePlayerTwoScoreDom(result, name, guess) {
   document.querySelector('.p2-score-name').innerHTML = name;
-  document.querySelector('.p2-current-guess').innerHTML = guess;
+  document.querySelector('.p2-guess-num').innerHTML = guess;
   document.querySelector('.p2-hot-cold').innerHTML = result;
 }
 
