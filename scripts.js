@@ -65,9 +65,9 @@ function checkPlayerOneGuess(playerOneGuess, playerOneName) {
   if (playerOneGuess < minRange || playerOneGuess > maxRange) {
     playerOneResult = 'outside of range';
   } else if (playerOneGuess < answer) {
-    playerOneResult = 'thats too low';
+    playerOneResult = 'das too low';
   } else if (playerOneGuess > answer) {
-    playerOneResult = 'thats too high';
+    playerOneResult = 'das too high';
   } else {
     playerOneResult = 'correct';
     endGame(playerOneName);
@@ -80,9 +80,9 @@ function checkPlayerTwoGuess(playerTwoGuess, playerTwoName) {
   if (playerTwoGuess < minRange || playerTwoGuess > maxRange) {
     playerTwoResult = 'outside of range';
   } else if (playerTwoGuess < answer) {
-    playerTwoResult = 'thats too low';
+    playerTwoResult = 'das too low';
   } else if (playerTwoGuess > answer) {
-    playerTwoResult = 'thats too high';
+    playerTwoResult = 'das too high';
   } else {
     playerTwoResult = 'correct';
     endGame(playerTwoName);

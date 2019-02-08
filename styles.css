@@ -31,6 +31,8 @@ input {
 
 .header {
   text-align: center;
+  background-image: linear-gradient(-90deg,#E0F6F5 10%, #F9E758);
+  border-bottom: 2px solid black;
 }
 
 .master-flex {
@@ -69,11 +71,14 @@ input {
   font-size: 65px;
   font-weight: bold;
   margin: 0px;
+  color: black;
+  text-shadow: 4px 4px 2px white;
 }
 
 .subtitle {
   font-size: 40px;
   margin: 0px;
+  color: hotpink;
 }
 
 .range-container {
